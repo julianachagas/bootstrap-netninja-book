@@ -1,0 +1,17 @@
+// Override bootstrap colors variables
+$primary: #c29938;
+$light: #fbf5e5;
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// create new color variables
+$custom-colors: (
+  'altlight': #f2ebfa,
+  'altdark': #522192,
+  'accent': #eab948
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
